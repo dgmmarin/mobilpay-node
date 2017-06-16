@@ -1,20 +1,20 @@
 {
   "name": "mobilpay-node",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "MobilPay Gateway library",
   "main": "index.js",
   "scripts": {
     "build": "gulp dist-es5"
   },
   "repository": {
-    "url": "https://github.com/robi-richter/mobilpay-node",
+    "url": "https://github.com/florintimbuc/mobilpay-node",
     "type": "git"
   },
   "keywords": [
     "payment",
     "card"
   ],
-  "author": "Robert Richter",
+  "author": "Florin Timbuc",
   "license": "ISC",
   "devDependencies": {
     "babel": "^6.5.2",

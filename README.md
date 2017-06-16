@@ -1,17 +1,17 @@
-# mobilpay-node
+# mobilpay-card-node
 
 [![dependencies Status](https://david-dm.org/robi-richter/mobilpay-node/status.svg)](https://david-dm.org/robi-richter/mobilpay-node)
 [![devDependencies Status](https://david-dm.org/robi-richter/mobilpay-node/dev-status.svg)](https://david-dm.org/robi-richter/mobilpay-node?type=dev)
 
 ## About
-this is a lightweight NodeJs library to integrate MobilPay payment gateway in your projects.
-Bare in mind that it's still **under development** and **does't support all the payment options**.
-So, feel free to contribute ;)
+This is a lightweight NodeJs library, updated and already builded (developed by robi-richter - *https://github.com/robi-richter/mobilpay-node*), to integrate MobilPay payment gateway in your projects.
+It's still **under development** and **does't support all the payment options**.
+
 
 ## Usage
 
 ```javascript
-var mobilpay = require('mobilpay-node');
+var mobilpay = require('mobilpay-card-node');
 var constants = mobilpay.constants;
 ```
 
@@ -36,15 +36,8 @@ Create a new payment request
 var paymentRequest = MobilPay.createRequest({
   amount: parseFloat(Math.round(Math.random() * 10000)/100).toFixed(2),
   customerId: '12345',
+  details: 'Payment details',
   billingAddress: {
-    type: constants.ADDRESS_TYPE_PERSON,
-    firstName: 'Damian',
-    lastName: 'Gardner',
-    email: 'damian.gardner@inbound.plus',
-    address: '4793 College Street, Cluj-Napoca, Cluj',
-    mobilePhone: '0722222222'
-  },
-  shippingAddress: {
     type: constants.ADDRESS_TYPE_PERSON,
     firstName: 'Damian',
     lastName: 'Gardner',
