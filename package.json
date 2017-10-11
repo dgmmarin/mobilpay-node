@@ -1,6 +1,6 @@
 {
   "name": "mobilpay-node",
-  "version": "0.0.72",
+  "version": "0.0.8",
   "description": "MobilPay Gateway library",
   "main": "index.js",
   "scripts": {
